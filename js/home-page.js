@@ -16,6 +16,10 @@ let leftNavBarRowIMG = leftNavBarRow.querySelector("img");
 let middleNavBarRowLinks = middleNavBarRow.querySelectorAll("a");
 let loginBtn = rightNavBarRow.querySelector("a");
 
+let headline = document.querySelectorAll(".athing");
+
+let spacer = document.querySelectorAll(".spacer");
+
 //----------------------------\\ FUNCTIONS //---------------------------\\
 
 document.body.style.margin = "0";
@@ -40,9 +44,33 @@ middleNavBarRowLinks.forEach(link => {
 });
 
 loginBtn.style.fontSize = "15px";
+loginBtn.style.transition = "300ms";
 loginBtn.style.marginRight = "10px";
 loginBtn.style.padding = "10px 15px";
 loginBtn.style.borderRadius = "10px";
 loginBtn.style.textTransform = "capitalize";
 loginBtn.style.boxShadow = "0px 0px 5px -3px black";
 loginBtn.style.background = "rgba(255, 255, 255, 0.2)";
+
+loginBtn.addEventListener("mouseover", () => {
+	loginBtn.style.transform = "scale(1.1)";
+	loginBtn.style.background = "rgba(255, 255, 255, 0.3)";
+});
+
+headline.forEach(headline => {
+	let headlineRows = headline.querySelectorAll("td");
+	let headlineNumber = headlineRows[0];
+	let upvoteHeadline = headlineRows[1];
+	let headlineTitle = headlineRows[2];
+	headlineNumber.vAlign = "";
+	headlineNumber.style.fontSize = "20px";
+
+	upvoteHeadline.vAlign = "";
+	upvoteHeadline.style.padding = "0 10px";
+
+	headlineTitle.style.fontSize = "20px";
+});
+
+spacer.forEach(spacer => {
+	spacer.style.height = "25px";
+});
