@@ -11,6 +11,11 @@
             "matches": ["*://news.ycombinator.com/*"],
             "js": ["js/home-page.js"],
             "run_at": "document_end"
+        },
+        {
+            "matches": ["https://news.ycombinator.com/login*"],
+            "js": ["js/login-page.js"],
+            "run_at": "document_end"
         }
     ]
 }
