@@ -22,6 +22,11 @@
             "matches": ["https://news.ycombinator.com/forgot*"],
             "js": ["js/forgotPass-page.js"],
             "run_at": "document_end"
+        },
+        {
+            "matches": ["https://news.ycombinator.com/submit*"],
+            "js": ["js/submit-page.js"],
+            "run_at": "document_end"
         }
     ]
 }
