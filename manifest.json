@@ -9,13 +9,18 @@
     "content_scripts": [
         {
             "matches": ["*://news.ycombinator.com/*"],
-            "exclude_matches": ["https://news.ycombinator.com/login*"],
+            "exclude_matches": ["https://news.ycombinator.com/login*", "https://news.ycombinator.com/forgot*"],
             "js": ["js/home-page.js"],
             "run_at": "document_end"
         },
         {
             "matches": ["https://news.ycombinator.com/login*"],
             "js": ["js/login-page.js"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": ["https://news.ycombinator.com/forgot*"],
+            "js": ["js/forgotPass-page.js"],
             "run_at": "document_end"
         }
     ]
