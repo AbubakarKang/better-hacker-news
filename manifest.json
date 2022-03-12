@@ -9,7 +9,7 @@
     "content_scripts": [
         {
             "matches": ["*://news.ycombinator.com/*"],
-            "exclude_matches": ["https://news.ycombinator.com/login*", "https://news.ycombinator.com/forgot*"],
+            "exclude_matches": ["https://news.ycombinator.com/login*", "https://news.ycombinator.com/forgot*", "https://news.ycombinator.com/x*"],
             "js": ["js/home-page.js"],
             "run_at": "document_end"
         },
