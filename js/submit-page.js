@@ -7,6 +7,8 @@ const mainTable = tables[0];
 const navBar = tables[1];
 const contentTable = tables[2];
 
+const navBarColumns = navBar.querySelectorAll("td");
+
 const contentTableBody = contentTable.querySelector("tbody");
 const contentTableBodyRows = contentTableBody.querySelectorAll("tr");
 
@@ -21,6 +23,9 @@ mainTable.width = "100%";
 
 navBar.style.height = "70px";
 navBar.style.boxShadow = "0px 0px 15px -5px black";
+navBarColumns[0].style.width = "30px";
+navBarColumns[0].style.padding = "0 10px";
+navBarColumns[0].style.height = "30px";
 
 contentTableBodyDataRows.forEach(row => {
 	let dataRow = row.querySelectorAll("td");
