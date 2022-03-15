@@ -24,4 +24,11 @@ navBar.style.boxShadow = "0px 0px 15px -5px black";
 contentTableBodyDataRows.forEach(row => {
 	let dataRow = row.querySelectorAll("td");
 	dataRow[0].style.textTransform = "capitalize";
+	let inputs = dataRow[1].querySelector("input, textarea");
+	inputs.style.padding = "10px";
+	inputs.style.margin = "10px 0";
+	inputs.style.borderRadius = "10px";
+	inputs.style.border = "1px solid #ccc";
+	inputs.style.boxShadow = "0px 0px 5px -3px black";
+	inputs.style.background = "rgba(255, 255, 255, 0.2)";
 });
