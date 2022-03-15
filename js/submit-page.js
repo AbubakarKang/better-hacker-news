@@ -11,6 +11,7 @@ const contentTableBody = contentTable.querySelector("tbody");
 const contentTableBodyRows = contentTableBody.querySelectorAll("tr");
 
 const contentTableBodyDataRows = [contentTableBodyRows[0], contentTableBodyRows[1], contentTableBodyRows[3]];
+const submitButton = contentTableBodyRows[5].querySelector("input");
 
 //----------------------------\\ FUNCTIONS //---------------------------\\
 
@@ -32,3 +33,13 @@ contentTableBodyDataRows.forEach(row => {
 	inputs.style.boxShadow = "0px 0px 5px -3px black";
 	inputs.style.background = "rgba(255, 255, 255, 0.2)";
 });
+
+submitButton.style.color = "black";
+submitButton.style.border = "none";
+submitButton.style.padding = "10px";
+submitButton.style.margin = "10px 0";
+submitButton.style.cursor = "pointer";
+submitButton.style.background = "white";
+submitButton.style.borderRadius = "10px";
+submitButton.style.textTransform = "capitalize";
+submitButton.style.boxShadow = "0px 0px 5px -3px black";
